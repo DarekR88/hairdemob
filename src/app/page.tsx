@@ -29,7 +29,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="max-w-[1200px] lg:m-auto lg:px-0 mx-2 px-8 mb-[100px] lg:mb-[100px] border-double border-2 border-cFour rounded-md py-[20px]">
+      <div className="max-w-[1200px] lg:m-auto lg:px-0 mx-2 px-8 mb-[100px] lg:mb-[100px] shadow-lg border-double border-2 border-cFour rounded-md py-[20px]">
         <h1 className="text-5xl flex flex-row pl-[20px] mb-[30px]">
           Services
         </h1>

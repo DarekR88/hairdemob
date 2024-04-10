@@ -8,7 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
-
+      fontFamily: {
+        Libre: ["Libre Baskerville", "sans-serif"],
+        Nunito: ["Nunito Sans", "sans-serif"],
+      },
     },
   },
   plugins: [],

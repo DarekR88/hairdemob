@@ -74,7 +74,7 @@ export function NavBar() {
           className="hidden lg:inline lg:flex"
         >
           <Image src={PhoneSvg} alt="pfp" width={23} />
-          <span className="pl-1">Call or Text</span>
+          <span className="pl-1">Appointments</span>
         </a>
 
         <div className="hidden lg:flex gap-6">

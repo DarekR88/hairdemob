@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --cOne: #E9ECEF;
+  --cTwo: #DEE2E6;
+  --cThree: #CED4DA;
+  --cFour: #ADB5BD;
+  --cFive: #6C757D;
+  --cSix: #495057;
+  --cSeven: #343A40;
+}
+
 body {
   font-family: 'Nunito Sans', sans-serif;
 }

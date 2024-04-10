@@ -52,9 +52,9 @@ export function NavBar() {
           About
         </Link> */}
       </div>
-      <header className="relative bg-white text-black flex flex-wrap gap-8 py-4 justify-center items-center w-screen lg:flex-row lg:justify-between lg:px-20 lg:h-28 lg:mb-[20px]">
+      <header className="relative bg-cThree text-black flex flex-wrap gap-5 py-4 justify-center items-center w-screen lg:flex-row lg:justify-between lg:px-20 lg:h-32">
         <Link href={"/"} className="font-Anton flex flex-col tracking-widest text-xl z-0 px-3">
-          <h1 className="lg:text-7xl text-3xl">Good Look</h1>
+          <h1 className="lg:text-7xl text-2xl">Look Sharp</h1>
           <p className="text-base text-right">Men's Barber</p>
           
         </Link>

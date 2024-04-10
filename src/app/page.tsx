@@ -7,12 +7,12 @@ export default function Home() {
     <main className="">
       <div className="flex border-2 border-black lg:h-[600px] lg:mb-[100px] bg-black">
         <div className="flex flex-row gap-20 lg:max-w-[1200px] m-auto">
-          <div className="hidden z-50 lg:flex lg:w-1/3 h-[250px] m-auto overflow-hidden">
+          <div className="hidden z-50 lg:flex lg:w-1/3 h-[250px] m-auto overflow-hidden rounded-md grayscale">
             <Image src={sharpImg} alt="sharp" />
           </div>
-          <div className="lg:w-2/3 w-full z-50">
-            <h1 className="lg:text-5xl font-bold text-white">Get your new look today</h1>
-            <p className="text-white">At Good Look our expert barbers can craft you a whole new image</p>
+          <div className="lg:w-2/3 flex flex-col items-center px-16 justify-center lg:h-fit h-[250px] w-full z-50">
+            <h1 className="lg:text-5xl font-bold text-white lg:pb-[20px] pb-[10px]">Get your new look today</h1>
+            <p className="text-white">At Look Sharp, our expert barbers can craft you a whole new image</p>
           </div>
         </div>
 

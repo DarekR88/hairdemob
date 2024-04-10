@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        "cOne": "var(--cOne)",
+        "cTwo": "var(--cTwo)",
+        "cThree": "var(--cThree)",
+        "cFour": "var(--cFour)",
+        "cFive": "var(--cFive)",
+        "cSix": "var(--cSix)",
+        "cSeven": "var(--cSeven)",
+      },
       fontFamily: {
         Libre: ["Libre Baskerville", "sans-serif"],
         Nunito: ["Nunito Sans", "sans-serif"],

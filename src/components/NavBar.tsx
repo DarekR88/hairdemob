@@ -21,7 +21,7 @@ export function NavBar() {
   return (
     <>
       <div
-        className={`fixed flex flex-col w-screen h-screen z-10 bg-white text-center pt-20 gap-8 ${
+        className={`fixed flex flex-col w-screen h-screen bg-white z-50 text-center pt-20 gap-8 ${
           isOpen
             ? "transition ease-in-out translate-y-0 duration-500"
             : "transition ease-in-out -translate-y-full duration-500"
@@ -58,7 +58,7 @@ export function NavBar() {
           <p className="text-base text-right">Men's Barber</p>
           
         </Link>
-        <a
+        {/* <a
           href="tel:408-761-4606"
           target="_blank"
           rel="noreferrer noopener"
@@ -66,7 +66,7 @@ export function NavBar() {
         >
           <Image src={PhoneSvg} alt="pfp" width={23} />
           
-        </a>
+        </a> */}
         <a
           href="tel:408-761-4606"
           target="_blank"
@@ -78,16 +78,16 @@ export function NavBar() {
         </a>
 
         <div className="hidden lg:flex gap-6">
-          <Link className="text-xl relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:focus:scale-x-100 after:transition after:duration-300 after:origin-center" href="/">
+          <Link className="text-xl relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:focus:scale-x-100 after:transition after:duration-300 after:origin-center" href="/">
             Home
           </Link>
-          <Link className="text-xl relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:focus:scale-x-100 after:transition after:duration-300 after:origin-center" href="/services">
+          <Link className="text-xl relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:focus:scale-x-100 after:transition after:duration-300 after:origin-center" href="/services">
             Services
           </Link>
-          <Link className="text-xl relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:focus:scale-x-100 after:transition after:duration-300 after:origin-center" href="/contact">
+          <Link className="text-xl relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:focus:scale-x-100 after:transition after:duration-300 after:origin-center" href="/contact">
             Contact
           </Link>
-          {/* <Link className="text-xl relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:focus:scale-x-100 after:transition after:duration-300 after:origin-center" href="/about">
+          {/* <Link className="text-xl relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:focus:scale-x-100 after:transition after:duration-300 after:origin-center" href="/about">
             About
           </Link> */}
         </div>
@@ -123,7 +123,7 @@ export function NavBar() {
         </div>
         <button
           onClick={handleClick}
-          className="inline flex flex-col justify-center items-center z-20 lg:hidden"
+          className="inline flex flex-col justify-center items-center z-50 lg:hidden"
         >
           <span
             className={`bg-black block transition-all duration-300 ease-out 

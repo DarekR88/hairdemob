@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import barberImg from "../../public/images/barberdark.jpg";
 import sharpImg from "../../public/images/sharp.jpg";
 import clippersIcon from "../../public/icons/hair-clipper-svgrepo-com.svg";
@@ -9,7 +10,7 @@ import razorIcon from "../../public/icons/straight-razor-svgrepo-com (1).svg";
 export default function Home() {
   return (
     <main className="">
-      <div className="flex border-2 border-black lg:h-[600px] lg:mb-[100px] bg-black">
+      <div className="flex border-2 border-black lg:h-[600px] lg:mb-[100px] mb-[50px] bg-black">
         <div className="flex flex-row gap-20 lg:max-w-[1200px] m-auto">
           <div className="hidden z-30 lg:flex lg:w-1/3 h-[250px] m-auto overflow-hidden rounded-md grayscale">
             <Image src={sharpImg} alt="sharp" />
@@ -28,14 +29,11 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="max-w-[1200px] m-auto lg:px-0 px-8 mb-[100px] border-double border-2 border-cFour rounded-md py-[20px]">
+      <div className="max-w-[1200px] lg:m-auto lg:px-0 mx-2 px-8 mb-[100px] lg:mb-[100px] border-double border-2 border-cFour rounded-md py-[20px]">
         <h1 className="text-5xl flex flex-row pl-[20px] mb-[30px]">
           Services
-          <span className="ml-[15px]">
-            <Image src={clippersIcon} alt="" height={50} />
-          </span>
         </h1>
-        <div className="flex flex-col lg:flex-row pl-[20px] lg:pr-[40px] gap-20">
+        <div className="flex flex-col lg:flex-row pl-[20px] lg:pr-[40px] gap-20 mb-[50px]">
           <div className="lg:w-1/3 w-full">
             <h1 className="flex flex-row text-3xl pl-[15px]">
               Cut{" "}
@@ -81,6 +79,14 @@ export default function Home() {
               leaving you with a smooth, polished finish.
             </p>
           </div>
+        </div>
+        <div className="flex w-full m-auto items-center justify-center">
+          <Link
+            href={"/contact"}
+            className="p-5 rounded-full text-xl bg-white border-2 border-cSeven text-cSeven shadow-md hover:bg-cSeven hover:border-cSeven hover:text-white transition duration-500 ease-in-out hover:shadow-none"
+          >
+            Schedule Appointment
+          </Link>
         </div>
       </div>
     </main>
